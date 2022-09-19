@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppspaceTechChallenge.API", "AppspaceTechChallenge\AppspaceTechChallenge.API.csproj", "{33C1C5FF-ED1D-4CFC-8170-ECD12AC9338B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33C1C5FF-ED1D-4CFC-8170-ECD12AC9338B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33C1C5FF-ED1D-4CFC-8170-ECD12AC9338B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33C1C5FF-ED1D-4CFC-8170-ECD12AC9338B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33C1C5FF-ED1D-4CFC-8170-ECD12AC9338B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A0DD2B2-6ECA-4524-A993-0A9BFAB62668}
+	EndGlobalSection
+EndGlobal
