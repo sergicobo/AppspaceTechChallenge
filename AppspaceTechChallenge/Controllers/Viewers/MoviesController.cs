@@ -16,5 +16,13 @@ namespace AppspaceTechChallenge.API.Controllers.Viewers
         {
             return NotFound("... Coming Soon ...");
         }
+
+        [HttpGet("upcoming")]
+        [ProducesResponseType(typeof(Movie), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult GetUpcomingRecommendations([FromQuery] List<string> keywords, [FromQuery] List<string> genres)
+        {
+            return NotFound("... Coming Soon ...");
+        }
     }
 }
