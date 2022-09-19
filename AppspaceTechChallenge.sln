@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppspaceTechChallenge.API", "AppspaceTechChallenge\AppspaceTechChallenge.API.csproj", "{33C1C5FF-ED1D-4CFC-8170-ECD12AC9338B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppspaceTechChallenge.API", "AppspaceTechChallenge\AppspaceTechChallenge.API.csproj", "{33C1C5FF-ED1D-4CFC-8170-ECD12AC9338B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppspaceTechChallenge.Domain", "AppspaceTechChallenge.Domain\AppspaceTechChallenge.Domain.csproj", "{43EE23CA-F4DE-41AF-A78E-111409030182}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{33C1C5FF-ED1D-4CFC-8170-ECD12AC9338B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33C1C5FF-ED1D-4CFC-8170-ECD12AC9338B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33C1C5FF-ED1D-4CFC-8170-ECD12AC9338B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43EE23CA-F4DE-41AF-A78E-111409030182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43EE23CA-F4DE-41AF-A78E-111409030182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43EE23CA-F4DE-41AF-A78E-111409030182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43EE23CA-F4DE-41AF-A78E-111409030182}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
