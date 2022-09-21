@@ -16,5 +16,13 @@ namespace AppspaceTechChallenge.API.Controllers.Managers
         {
             return NotFound("... Coming Soon ...");
         }
+
+        [HttpGet("suggested")]
+        [ProducesResponseType(typeof(Movie), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult GetSuggestedBillboard([FromQuery] int timePeriod, [FromQuery] int numberOfScreens)
+        {
+            return NotFound("... Coming Soon ...");
+        }
     }
 }
