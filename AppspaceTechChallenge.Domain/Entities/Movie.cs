@@ -1,6 +1,21 @@
-﻿namespace AppspaceTechChallenge.Domain.Entities
+﻿using System;
+using System.Collections.Generic;
+
+namespace AppspaceTechChallenge.Domain.Entities
 {
-    public class Movie : Recommendation
+    public partial class Movie
     {
+        public Movie()
+        {
+            Session = new HashSet<Session>();
+        }
+
+        public int Id { get; set; }
+        public string OriginalTitle { get; set; }
+        public DateTime ReleaseDate { get; set; }
+        public string OriginalLanguage { get; set; }
+        public bool Adult { get; set; }
+
+        public virtual ICollection<Session> Session { get; set; }
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace AppspaceTechChallenge.Domain.Entities
+﻿namespace AppspaceTechChallenge.API.Models
 {
-    public class TvShow : Recommendation
+    public class TvShowDTO : RecommendationDTO
     {
         public int NumberOfSeasons { get; set; }
         public int NumberOfEpisodes { get; set; }

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AppspaceTechChallenge.Domain.Entities
+namespace AppspaceTechChallenge.API.Models
 {
-    public abstract class Recommendation
+    public abstract class RecommendationDTO
     {
         public string Title { get; set; }
         public string Overview { get; set; }

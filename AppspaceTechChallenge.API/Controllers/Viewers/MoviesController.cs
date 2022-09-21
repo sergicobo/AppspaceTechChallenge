@@ -1,4 +1,4 @@
-﻿using AppspaceTechChallenge.Domain.Entities;
+﻿using AppspaceTechChallenge.API.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ namespace AppspaceTechChallenge.API.Controllers.Viewers
     public class MoviesController : ControllerBase
     {
         [HttpGet("all-time")]
-        [ProducesResponseType(typeof(Movie), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(MovieDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetAllTimeRecommendations([FromQuery] List<string> keywords, [FromQuery] List<string> genres)
         {
@@ -19,7 +19,7 @@ namespace AppspaceTechChallenge.API.Controllers.Viewers
         }
 
         [HttpGet("upcoming")]
-        [ProducesResponseType(typeof(Movie), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(MovieDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetUpcomingRecommendations([FromQuery] List<string> keywords, [FromQuery] List<string> genres)
         {
