@@ -5,6 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using AppSpaceTechChallenge.Infrastructure.Context;
+using AppspaceTechChallenge.API.Contracts;
+using AppspaceTechChallenge.API.Services;
 
 namespace AppspaceTechChallenge
 {
@@ -23,6 +25,8 @@ namespace AppspaceTechChallenge
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddScoped<IBillboardService, BillboardService>();
 
             services.AddSwaggerGen(
                 options =>
