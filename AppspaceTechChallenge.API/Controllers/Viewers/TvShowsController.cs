@@ -5,7 +5,8 @@ using System.Collections.Generic;
 
 namespace AppspaceTechChallenge.API.Controllers.Viewers
 {
-    [Route("[controller]")]
+    [ApiExplorerSettings(GroupName = "Viewers")]
+    [Route("viewers/[controller]")]
     [ApiController]
     public class TvShowsController : ControllerBase
     {

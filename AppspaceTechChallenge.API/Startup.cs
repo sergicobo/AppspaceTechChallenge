@@ -22,7 +22,15 @@ namespace AppspaceTechChallenge
         {
             services.AddControllers();
 
-            services.AddSwaggerGen();
+            services.AddSwaggerGen(
+                options =>
+                {
+                    options.DocInclusionPredicate((_, api) => !string.IsNullOrWhiteSpace(api.GroupName));
+                    options.TagActionsBy(api => new[] { api.GroupName });
+                }
+            );
+
+            services.AddDbContext<BeezyCinemaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("BeezyCinemaCNX")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
