@@ -3,6 +3,7 @@ using AppspaceTechChallenge.API.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace AppspaceTechChallenge.API.Controllers.Managers
 {
@@ -35,11 +36,12 @@ namespace AppspaceTechChallenge.API.Controllers.Managers
         }
 
         [HttpGet("intelligent")]
-        [ProducesResponseType(typeof(MovieDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(List<MovieDTO>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult GetSuggestedIntelligentBillboard([FromQuery] int timePeriod, [FromQuery] int numberOfScreens)
+        public async Task<IActionResult> GetSuggestedIntelligentBillboard([FromQuery] int timePeriod, [FromQuery] int bigRooms, [FromQuery] int smallRooms)
         {
-            return NotFound("... Coming Soon ...");
+            var result= await _billboardService.BuildIntelligentBillboards();
+            return Ok(result);
         }
     }
 }

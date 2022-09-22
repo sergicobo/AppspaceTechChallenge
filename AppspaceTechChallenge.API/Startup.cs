@@ -4,9 +4,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
-using AppSpaceTechChallenge.Infrastructure.Context;
+using AppspaceTechChallenge.Infrastructure.Context;
 using AppspaceTechChallenge.API.Contracts;
 using AppspaceTechChallenge.API.Services;
+using AppspaceTechChallenge.Domain.Proxies;
+using AppspaceTechChallenge.Infrastructure.Proxies;
 
 namespace AppspaceTechChallenge
 {
@@ -27,6 +29,7 @@ namespace AppspaceTechChallenge
             services.AddControllers();
 
             services.AddScoped<IBillboardService, BillboardService>();
+            services.AddScoped<ITMDBProxy, TMDBProxy>();
 
             services.AddSwaggerGen(
                 options =>

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppspaceTechChallenge.API",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppspaceTechChallenge.Domain", "AppspaceTechChallenge.Domain\AppspaceTechChallenge.Domain.csproj", "{43EE23CA-F4DE-41AF-A78E-111409030182}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSpaceTechChallenge.Infrastructure", "AppSpaceTechChallenge.Infrastructure\AppSpaceTechChallenge.Infrastructure.csproj", "{57CA5E29-6B3D-47FE-83E3-0EE05A32E446}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppspaceTechChallenge.Infrastructure", "AppSpaceTechChallenge.Infrastructure\AppspaceTechChallenge.Infrastructure.csproj", "{57CA5E29-6B3D-47FE-83E3-0EE05A32E446}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

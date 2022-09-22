@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AppspaceTechChallenge.Domain\AppspaceTechChallenge.Domain.csproj" />
-    <ProjectReference Include="..\AppSpaceTechChallenge.Infrastructure\AppSpaceTechChallenge.Infrastructure.csproj" />
+    <ProjectReference Include="..\AppSpaceTechChallenge.Infrastructure\AppspaceTechChallenge.Infrastructure.csproj" />
   </ItemGroup>
 
 

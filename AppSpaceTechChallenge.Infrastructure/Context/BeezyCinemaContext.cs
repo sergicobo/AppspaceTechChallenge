@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 // If you have enabled NRTs for your project, then un-comment the following line:
 // #nullable disable
 
-namespace AppSpaceTechChallenge.Infrastructure.Context
+namespace AppspaceTechChallenge.Infrastructure.Context
 {
     public partial class BeezyCinemaContext : DbContext
     {
