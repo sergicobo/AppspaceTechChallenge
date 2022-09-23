@@ -1,5 +1,7 @@
-﻿using AppspaceTechChallenge.API.Contracts;
+﻿using System;
+using AppspaceTechChallenge.API.Contracts;
 using AppspaceTechChallenge.API.Models;
+using AppspaceTechChallenge.API.Models.Billboards;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -36,12 +38,18 @@ namespace AppspaceTechChallenge.API.Controllers.Managers
         }
 
         [HttpGet("intelligent")]
-        [ProducesResponseType(typeof(List<MovieDTO>), StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> GetSuggestedIntelligentBillboard([FromQuery] int timePeriod, [FromQuery] int bigRooms, [FromQuery] int smallRooms)
+        [ProducesResponseType(typeof(List<BillboardDTO>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
+        public async Task<IActionResult> GetSuggestedIntelligentBillboard([FromQuery] IntelligentBillboardRequest request)
         {
-            var result= await _billboardService.BuildIntelligentBillboards();
-            return Ok(result);
+            try
+            {
+                return Ok(await _billboardService.BuildIntelligentBillboards(request));
+            }
+            catch (Exception ex)
+            {
+                return ValidationProblem(ex.Message, statusCode: StatusCodes.Status422UnprocessableEntity);
+            }
         }
     }
 }

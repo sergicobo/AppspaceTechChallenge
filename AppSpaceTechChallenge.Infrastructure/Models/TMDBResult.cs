@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace AppspaceTechChallenge.Infrastructure.Models
 {
     public class TMDBResult
     {
-        public Result[] Results { get; set; }
+        public IEnumerable<Result> Results { get; set; }
     }
 
     public class Result

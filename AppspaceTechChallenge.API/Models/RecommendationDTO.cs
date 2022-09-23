@@ -7,10 +7,10 @@ namespace AppspaceTechChallenge.API.Models
     {
         public string Title { get; set; }
         public string Overview { get; set; }
-        public List<string> Genres { get; set; }
+        public IEnumerable<string> Genres { get; set; }
         public string Language { get; set; }
         public DateTime ReleaseDate { get; set; }
         public string WebSite { get; set; }
-        public List<string> AssociatedKeywords { get; set; }
+        public IEnumerable<string> AssociatedKeywords { get; set; }
     }
 }

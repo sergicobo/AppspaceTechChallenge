@@ -1,12 +1,11 @@
-﻿using AppspaceTechChallenge.API.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using AppspaceTechChallenge.API.Models.Billboards;
 
 namespace AppspaceTechChallenge.API.Contracts
 {
     public interface IBillboardService
     {
-        public void BuildSuggestedBillboards();
-        public Task<List<MovieDTO>> BuildIntelligentBillboards();
+        public Task<IEnumerable<BillboardDTO>> BuildIntelligentBillboards(IntelligentBillboardRequest intelligentBillboardRequest);
     }
 }
