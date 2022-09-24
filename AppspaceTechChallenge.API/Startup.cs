@@ -8,7 +8,9 @@ using AppspaceTechChallenge.Infrastructure.Context;
 using AppspaceTechChallenge.API.Contracts;
 using AppspaceTechChallenge.API.Services;
 using AppspaceTechChallenge.Domain.Proxies;
+using AppspaceTechChallenge.Domain.Repositories;
 using AppspaceTechChallenge.Infrastructure.Proxies;
+using AppspaceTechChallenge.Infrastructure.Repositories;
 
 namespace AppspaceTechChallenge
 {
@@ -30,6 +32,7 @@ namespace AppspaceTechChallenge
 
             services.AddScoped<IBillboardService, BillboardService>();
             services.AddScoped<ITMDBProxy, TMDBProxy>();
+            services.AddScoped<IBeezyCinemaRepository, BeezyCinemaRepository>();
 
             services.AddSwaggerGen(
                 options =>
@@ -39,7 +42,7 @@ namespace AppspaceTechChallenge
                 }
             );
 
-            services.AddDbContext<BeezyCinemaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("BeezyCinemaCNX")));
+            services.AddDbContext<BeezyCinemaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("BeezyCinema")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
