@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace AppspaceTechChallenge.API.Models.Billboards
 {
@@ -7,6 +8,7 @@ namespace AppspaceTechChallenge.API.Models.Billboards
         public const int WeeekDefinition = 7;
 
         public DateTime? StartDate { get; set; }
+        [BindRequired]
         public DateTime EndDate { get; set; }
 
         public void Validate()
