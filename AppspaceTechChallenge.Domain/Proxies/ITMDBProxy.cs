@@ -7,7 +7,7 @@ namespace AppspaceTechChallenge.Domain.Proxies
 {
     public interface ITMDBProxy
     {
-        Task<IEnumerable<MovieData>> GetMovies(int totalMoviesNeeded, DateTime startDate, DateTime endDate, bool blockbuster);
         Task<IEnumerable<GenreData>> GetGenres();
+        Task<IEnumerable<MovieData>> GetMovies(int page, DateTime startDate, DateTime endDate, bool blockbuster);
     }
 }

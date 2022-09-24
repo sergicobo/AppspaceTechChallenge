@@ -28,17 +28,9 @@ namespace AppspaceTechChallenge.Infrastructure.Proxies
             return genres.Result.Select(g => new GenreData(g.Id, g.Name));
         }
 
-        public async Task<IEnumerable<MovieData>> GetMovies(int totalMoviesNeeded, DateTime startDate, DateTime endDate, bool blockbuster)
+        public async Task<IEnumerable<MovieData>> GetMovies(int page, DateTime startDate, DateTime endDate, bool blockbuster)
         {
-            var pageCount = 1;
-            var movies = await RequestMovies(startDate, endDate, pageCount, blockbuster);
-            if (!movies.Any()) return new List<MovieData>();
-
-            while (movies.Count() < totalMoviesNeeded)
-            {
-                movies = movies.Concat(await RequestMovies(startDate, endDate, pageCount++, blockbuster));
-            }
-
+            var movies = await RequestMovies(startDate, endDate, page, blockbuster);
             return movies;
         }
 
