@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace AppspaceTechChallenge.Domain.Entities
+namespace AppspaceTechChallenge.Infrastructure.Models.Database
 {
-    public partial class Room
+    public class Room
     {
         public Room()
         {

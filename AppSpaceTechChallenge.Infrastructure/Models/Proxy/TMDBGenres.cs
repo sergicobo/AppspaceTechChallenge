@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace AppspaceTechChallenge.Infrastructure.Models
+namespace AppspaceTechChallenge.Infrastructure.Models.Proxy
 {
     public class TMDBGenres
     {

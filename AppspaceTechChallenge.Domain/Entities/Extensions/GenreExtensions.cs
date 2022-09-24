@@ -1,4 +1,4 @@
-﻿using AppspaceTechChallenge.Domain.Models;
+﻿using AppspaceTechChallenge.Domain.Entities;
 using System.Collections.Generic;
 using System.Linq;
 

@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace AppspaceTechChallenge.Domain.Entities
+namespace AppspaceTechChallenge.Infrastructure.Models.Database
 {
-    public partial class Session
+    public class Session
     {
         public int Id { get; set; }
         public int RoomId { get; set; }

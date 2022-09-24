@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using AppspaceTechChallenge.Domain.Models;
+using AppspaceTechChallenge.Domain.Entities;
 using AppspaceTechChallenge.Domain.Proxies;
-using AppspaceTechChallenge.Infrastructure.Models;
+using AppspaceTechChallenge.Infrastructure.Models.Proxy;
 using Tiny.RestClient;
 
 namespace AppspaceTechChallenge.Infrastructure.Proxies
@@ -44,7 +44,7 @@ namespace AppspaceTechChallenge.Infrastructure.Proxies
                 .AddQueryParameter("page", page)
                 .ExecuteAsync<TMDBResult>();
 
-            return moviesFromProxy.Results.Select(m => new MovieData()
+            return moviesFromProxy.Results.Select(m => new MovieData
             {
                 Title = m.OriginalTitle,
                 Language = m.OriginalLanguage,

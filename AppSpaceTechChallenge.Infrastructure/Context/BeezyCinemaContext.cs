@@ -1,4 +1,4 @@
-﻿using AppspaceTechChallenge.Domain.Entities;
+﻿using AppspaceTechChallenge.Infrastructure.Models.Database;
 using Microsoft.EntityFrameworkCore;
 
 // Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AppspaceTechChallenge.Infrastructure.Context
 {
-    public partial class BeezyCinemaContext : DbContext
+    public class BeezyCinemaContext : DbContext
     {
         public BeezyCinemaContext()
         {

@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using AppspaceTechChallenge.API.Contracts;
 using AppspaceTechChallenge.API.Models;
 using AppspaceTechChallenge.API.Models.Billboards;
+using AppspaceTechChallenge.Domain.Entities;
 using AppspaceTechChallenge.Domain.Extensions;
-using AppspaceTechChallenge.Domain.Models;
 using AppspaceTechChallenge.Domain.Proxies;
 using AppspaceTechChallenge.Domain.Repositories;
 

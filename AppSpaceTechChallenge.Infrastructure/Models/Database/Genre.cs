@@ -1,6 +1,6 @@
-﻿namespace AppspaceTechChallenge.Domain.Entities
+﻿namespace AppspaceTechChallenge.Infrastructure.Models.Database
 {
-    public partial class Genre
+    public class Genre
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace AppspaceTechChallenge.Infrastructure.Models
+namespace AppspaceTechChallenge.Infrastructure.Models.Proxy
 {
     public class TMDBResult
     {
@@ -14,11 +14,11 @@ namespace AppspaceTechChallenge.Infrastructure.Models
         [JsonProperty("original_title")]
         public string OriginalTitle { get; set; }
         public string Overview { get; set; }
-        [JsonProperty("genre_ids")] 
+        [JsonProperty("genre_ids")]
         public int[] Genres { get; set; }
         [JsonProperty("original_language")]
         public string OriginalLanguage { get; set; }
-        [JsonProperty("release_date")] 
+        [JsonProperty("release_date")]
         public DateTime ReleaseDate { get; set; }
 
     }

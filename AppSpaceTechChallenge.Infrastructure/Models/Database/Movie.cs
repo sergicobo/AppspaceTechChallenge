@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AppspaceTechChallenge.Domain.Entities
+namespace AppspaceTechChallenge.Infrastructure.Models.Database
 {
-    public partial class Movie
+    public class Movie
     {
         public Movie()
         {

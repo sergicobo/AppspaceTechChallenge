@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
-using AppspaceTechChallenge.Domain.Models;
+using AppspaceTechChallenge.Domain.Entities;
 using AppspaceTechChallenge.Domain.Repositories;
 using AppspaceTechChallenge.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
@@ -58,7 +58,7 @@ namespace AppspaceTechChallenge.Infrastructure.Repositories
             .OrderByDescending(m => m.seatsSold)
             .ThenByDescending(m => m.movieSeats.movie.ReleaseDate)
             .Where(m => m.movieSeats.movie.ReleaseDate >= startDate && m.movieSeats.movie.ReleaseDate <= endDate)
-            .Select(movie => new MovieData()
+            .Select(movie => new MovieData
             {
                 Title = movie.movieSeats.movie.OriginalTitle,
                 Overview = string.Empty,

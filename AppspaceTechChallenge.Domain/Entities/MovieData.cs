@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AppspaceTechChallenge.Domain.Models
+namespace AppspaceTechChallenge.Domain.Entities
 {
     public class MovieData
     {
