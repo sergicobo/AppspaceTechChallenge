@@ -2,23 +2,23 @@
 {
     public class GenreData
     {
-        private int Id { get; }
-        private string Name { get; }
+        private readonly int _id;
+        private readonly string _name;
 
         public GenreData(int id, string name)
         {
-            Id = id;
-            Name = name;
+            _id = id;
+            _name = name;
         }
 
         public int GetId()
         {
-            return Id;
+            return _id;
         }
 
         public string GetName()
         {
-            return Name;
+            return _name;
         }
     }
 }

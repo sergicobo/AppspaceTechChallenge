@@ -4,11 +4,51 @@ namespace AppspaceTechChallenge.Domain.Entities
 {
     public class MovieData
     {
-        public string Title { get; set; }
-        public string Overview { get; set; }
-        public int[] Genres { get; set; }
-        public string Language { get; set; }
-        public DateTime ReleaseDate { get; set; }
-        public bool Blockbuster { get; set; }
+        private readonly string _title;
+        private readonly string _overview;
+        private readonly int[] _genres;
+        private readonly string _language;
+        private readonly DateTime _releaseDate;
+        private readonly bool _blockbuster;
+
+        public MovieData(string title, string overview, int[] genres, string language, DateTime releaseDate, bool blockbuster)
+        {
+            _title = title;
+            _overview = overview;
+            _genres = genres;
+            _language = language;
+            _releaseDate = releaseDate;
+            _blockbuster = blockbuster;
+        }
+
+        public string GetTitle()
+        {
+            return _title;
+        }
+
+        public string GetOverview()
+        {
+            return _overview;
+        }
+
+        public int[] GetGenres()
+        {
+            return _genres;
+        }
+
+        public string GetLanguage()
+        {
+            return _language;
+        }
+
+        public DateTime GetReleaseDate()
+        {
+            return _releaseDate;
+        }
+
+        public bool GetBlockbuster()
+        {
+            return _blockbuster;
+        }
     }
 }

@@ -91,11 +91,11 @@ namespace AppspaceTechChallenge.API.Services
         {
             return movies.Select(m => new MovieDTO()
             {
-                Title = m.Title,
-                Language = m.Language,
-                Overview = m.Overview,
-                Genres = m.Genres.Select(g => Genres.MatchById(g)),
-                ReleaseDate = m.ReleaseDate
+                Title = m.GetTitle(),
+                Language = m.GetLanguage(),
+                Overview = m.GetOverview(),
+                Genres = m.GetGenres().Select(g => Genres.MatchById(g)),
+                ReleaseDate = m.GetReleaseDate()
             });
         }
     }

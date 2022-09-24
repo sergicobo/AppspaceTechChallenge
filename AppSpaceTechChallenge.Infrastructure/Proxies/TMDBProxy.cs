@@ -45,14 +45,14 @@ namespace AppspaceTechChallenge.Infrastructure.Proxies
                 .ExecuteAsync<TMDBResult>();
 
             return moviesFromProxy.Results.Select(m => new MovieData
-            {
-                Title = m.OriginalTitle,
-                Language = m.OriginalLanguage,
-                Overview = m.Overview,
-                Genres = m.Genres,
-                ReleaseDate = m.ReleaseDate,
-                Blockbuster = blockbuster
-            });
+            (
+                m.OriginalTitle,
+                m.Overview,
+                m.Genres,
+                m.OriginalLanguage,
+                m.ReleaseDate,
+                blockbuster
+            ));
         }
     }
 }

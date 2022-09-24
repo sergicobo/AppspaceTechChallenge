@@ -59,14 +59,14 @@ namespace AppspaceTechChallenge.Infrastructure.Repositories
             .ThenByDescending(m => m.movieSeats.movie.ReleaseDate)
             .Where(m => m.movieSeats.movie.ReleaseDate >= startDate && m.movieSeats.movie.ReleaseDate <= endDate)
             .Select(movie => new MovieData
-            {
-                Title = movie.movieSeats.movie.OriginalTitle,
-                Overview = string.Empty,
-                Language = movie.movieSeats.movie.OriginalLanguage,
-                Genres = movieGenres.Where(mg => mg.MovieId == movie.movieSeats.movie.Id).Select(mg => mg.GenreId).ToArray(),
-                ReleaseDate = movie.movieSeats.movie.ReleaseDate,
-                Blockbuster = movie.movieSeats.size == "Big"
-            });
+            (
+                movie.movieSeats.movie.OriginalTitle,
+                string.Empty,
+                movieGenres.Where(mg => mg.MovieId == movie.movieSeats.movie.Id).Select(mg => mg.GenreId).ToArray(),
+                movie.movieSeats.movie.OriginalLanguage,
+                movie.movieSeats.movie.ReleaseDate,
+                movie.movieSeats.size == "Big"
+            ));
 
             return movies;
         }

@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppspaceTechChallenge.Domai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppspaceTechChallenge.Infrastructure", "AppSpaceTechChallenge.Infrastructure\AppspaceTechChallenge.Infrastructure.csproj", "{57CA5E29-6B3D-47FE-83E3-0EE05A32E446}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppspaceTechChallenge.Domain.Tests", "AppspaceTechChallenge.Domain.Tests\AppspaceTechChallenge.Domain.Tests.csproj", "{8970F85D-63A1-48EE-B457-22E8240B80B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppspaceTechChallenge.API.Tests", "AppspaceTechChallenge.API.Tests\AppspaceTechChallenge.API.Tests.csproj", "{1D37FB14-83CE-4656-B814-C0D983ABC222}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{57CA5E29-6B3D-47FE-83E3-0EE05A32E446}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57CA5E29-6B3D-47FE-83E3-0EE05A32E446}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57CA5E29-6B3D-47FE-83E3-0EE05A32E446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8970F85D-63A1-48EE-B457-22E8240B80B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8970F85D-63A1-48EE-B457-22E8240B80B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8970F85D-63A1-48EE-B457-22E8240B80B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8970F85D-63A1-48EE-B457-22E8240B80B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D37FB14-83CE-4656-B814-C0D983ABC222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D37FB14-83CE-4656-B814-C0D983ABC222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D37FB14-83CE-4656-B814-C0D983ABC222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D37FB14-83CE-4656-B814-C0D983ABC222}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
