@@ -10,7 +10,6 @@ using AppspaceTechChallenge.Domain.Entities;
 using NSubstitute;
 using Xunit;
 using FluentAssertions;
-using AppspaceTechChallenge.API.Models;
 
 namespace AppspaceTechChallenge.API.Tests.Services
 {

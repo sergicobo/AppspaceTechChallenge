@@ -1,9 +1,7 @@
-﻿using AppspaceTechChallenge.API.Models.Billboards;
-using AppspaceTechChallenge.API.Models;
+﻿using AppspaceTechChallenge.API.Models;
 using AutoFixture.Xunit2;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using FluentAssertions;
 using Xunit;
 
