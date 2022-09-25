@@ -99,31 +99,36 @@ namespace AppspaceTechChallenge.API.Tests.Controllers.Managers
 
         private IEnumerable<BillboardDTO> GetSomeBillboards()
         {
-            return  new List<BillboardDTO>
+            return new List<BillboardDTO>
                     {
                         new BillboardDTO
                         (
                             new DateTime(2022, 09, 19),
                             new List<MovieDTO>()
                             {
-                                new MovieDTO()
-                                {
-                                    Title = "Title1",
-                                    Overview = "Overview1",
-                                    Genres = new List<string> { "Action", "Adventure" },
-                                    Language = "es",
-                                    ReleaseDate = new DateTime(2022, 09, 20)
-                                }
+                                new MovieDTO
+                                (
+                                    title: "Title1",
+                                    overview:"Overview1",
+                                    genres:new List<string> { "Action", "Adventure" },
+                                    language: "es",
+                                    releaseDate: new DateTime(2022, 09, 20),
+                                    webSite: null,
+                                    associatedKeywords: null
+                                )
                             },
                             new List<MovieDTO>()
                             {
-                                new MovieDTO()
-                                {
-                                    Title = "Title2",
-                                    Overview = "Overview2",
-                                    Genres = new List<string> { "Action", "Adventure" },
-                                    ReleaseDate = new DateTime(2022, 09, 21)
-                                }
+                                new MovieDTO
+                                (
+                                    title: "Title2",
+                                    overview:"Overview2",
+                                    genres:new List<string> { "Action", "Adventure" },
+                                    language: "es",
+                                    releaseDate: new DateTime(2022, 09, 21),
+                                    webSite: null,
+                                    associatedKeywords: null
+                                )
                             }
                         ),
 
@@ -132,24 +137,29 @@ namespace AppspaceTechChallenge.API.Tests.Controllers.Managers
                             new DateTime(2022, 09, 26),
                             new List<MovieDTO>()
                             {
-                                new MovieDTO()
-                                {
-                                    Title = "Title3",
-                                    Overview = "Overview3",
-                                    Genres = new List<string> { "Action", "Adventure" },
-                                    Language = "es",
-                                    ReleaseDate = new DateTime(2022, 09, 27)
-                                }
+                                new MovieDTO
+                                (
+                                    title: "Title3",
+                                    overview:"Overview3",
+                                    genres:new List<string> { "Action", "Adventure" },
+                                    language: "es",
+                                    releaseDate: new DateTime(2022, 09, 27),
+                                    webSite: null,
+                                    associatedKeywords: null
+                                )
                             },
                             new List<MovieDTO>()
                             {
-                                new MovieDTO()
-                                {
-                                    Title = "Title4",
-                                    Overview = "Overview4",
-                                    Genres = new List<string> { "Action", "Adventure" },
-                                    ReleaseDate = new DateTime(2022, 09, 28)
-                                }
+                                new MovieDTO
+                                (
+                                    title: "Title4",
+                                    overview:"Overview4",
+                                    genres:new List<string> { "Action", "Adventure" },
+                                    language: "es",
+                                    releaseDate: new DateTime(2022, 09, 28),
+                                    webSite: null,
+                                    associatedKeywords: null
+                                )
                             }
                         ),
 
@@ -158,24 +168,29 @@ namespace AppspaceTechChallenge.API.Tests.Controllers.Managers
                             new DateTime(2022, 10, 3),
                             new List<MovieDTO>()
                             {
-                                new MovieDTO()
-                                {
-                                    Title = "Title5",
-                                    Overview = "Overview5",
-                                    Genres = new List<string> { "Action", "Adventure" },
-                                    Language = "es",
-                                    ReleaseDate = new DateTime(2022, 10, 4)
-                                }
+                                new MovieDTO
+                                (
+                                    title: "Title5",
+                                    overview:"Overview5",
+                                    genres:new List<string> { "Action", "Adventure" },
+                                    language: "es",
+                                    releaseDate: new DateTime(2022, 10, 4),
+                                    webSite: null,
+                                    associatedKeywords: null
+                                )
                             },
                             new List<MovieDTO>()
                             {
-                                new MovieDTO()
-                                {
-                                    Title = "Title6",
-                                    Overview = "Overview6",
-                                    Genres = new List<string> { "Action", "Adventure" },
-                                    ReleaseDate = new DateTime(2022, 10, 5)
-                                }
+                                new MovieDTO
+                                (
+                                    title: "Title6",
+                                    overview:"Overview6",
+                                    genres:new List<string> { "Action", "Adventure" },
+                                    language: "es",
+                                    releaseDate: new DateTime(2022, 10, 5),
+                                    webSite: null,
+                                    associatedKeywords: null
+                                )
                             }
                         ),
 
@@ -184,24 +199,29 @@ namespace AppspaceTechChallenge.API.Tests.Controllers.Managers
                             new DateTime(2022, 10, 10),
                             new List<MovieDTO>()
                             {
-                                new MovieDTO()
-                                {
-                                    Title = "Title7",
-                                    Overview = "Overview7",
-                                    Genres = new List<string> { "Action", "Adventure" },
-                                    Language = "es",
-                                    ReleaseDate = new DateTime(2022, 10, 11)
-                                }
+                                new MovieDTO
+                                (
+                                    title: "Title7",
+                                    overview:"Overview7",
+                                    genres:new List<string> { "Action", "Adventure" },
+                                    language: "es",
+                                    releaseDate: new DateTime(2022, 10, 11),
+                                    webSite: null,
+                                    associatedKeywords: null
+                                )
                             },
                             new List<MovieDTO>()
                             {
-                                new MovieDTO()
-                                {
-                                    Title = "Title8",
-                                    Overview = "Overview8",
-                                    Genres = new List<string> { "Action", "Adventure" },
-                                    ReleaseDate = new DateTime(2022, 10, 12)
-                                }
+                                new MovieDTO
+                                (
+                                    title: "Title8",
+                                    overview:"Overview8",
+                                    genres:new List<string> { "Action", "Adventure" },
+                                    language: "es",
+                                    releaseDate: new DateTime(2022, 10, 12),
+                                    webSite: null,
+                                    associatedKeywords: null
+                                )
                             }
                         )
                         };

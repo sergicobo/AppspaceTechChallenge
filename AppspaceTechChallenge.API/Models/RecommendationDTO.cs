@@ -42,5 +42,17 @@ namespace AppspaceTechChallenge.API.Models
         /// List of keywords associated with the recommendation.
         /// </summary>
         public IEnumerable<string> AssociatedKeywords { get; set; }
+
+        protected RecommendationDTO(string title, string overview, IEnumerable<string> genres, string language, 
+            DateTime releaseDate, string webSite, IEnumerable<string> associatedKeywords)
+        {
+            Title = title;
+            Overview = overview;
+            Genres = genres;
+            Language = language;
+            ReleaseDate = releaseDate;
+            WebSite = webSite;
+            AssociatedKeywords = associatedKeywords;
+        }
     }
 }

@@ -136,14 +136,16 @@ namespace AppspaceTechChallenge.API.Services
         /// <param name="movies">List of MovieData parameters</param>
         private IEnumerable<MovieDTO> ToDto(IEnumerable<MovieData> movies)
         {
-            return movies.Select(m => new MovieDTO()
-            {
-                Title = m.GetTitle(),
-                Language = m.GetLanguage(),
-                Overview = m.GetOverview(),
-                Genres = m.GetGenres().Select(g => Genres.MatchById(g)),
-                ReleaseDate = m.GetReleaseDate()
-            });
+            return movies.Select(m => new MovieDTO
+            (
+                m.GetTitle(),
+                m.GetOverview(),
+                m.GetGenres().Select(g => Genres.MatchById(g)),
+                m.GetLanguage(),
+                m.GetReleaseDate(),
+                null,
+                null
+            ));
         }
     }
 }

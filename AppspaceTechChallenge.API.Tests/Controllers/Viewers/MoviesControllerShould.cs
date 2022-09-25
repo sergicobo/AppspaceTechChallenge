@@ -1,18 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using AppspaceTechChallenge.API.Controllers.Viewers;
-using AppspaceTechChallenge.API.Models;
-using AppspaceTechChallenge.API.Models.Billboards;
-using AppspaceTechChallenge.API.Services;
-using AppspaceTechChallenge.API.Tests.Mocks;
-using AppspaceTechChallenge.Domain.Proxies;
-using AppspaceTechChallenge.Domain.Repositories;
 using AutoFixture.Xunit2;
 using FluentAssertions;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using NSubstitute;
 using Xunit;
 
 namespace AppspaceTechChallenge.API.Tests.Controllers.Viewers
