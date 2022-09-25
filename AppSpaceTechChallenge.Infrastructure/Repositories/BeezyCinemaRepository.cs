@@ -19,7 +19,6 @@ namespace AppspaceTechChallenge.Infrastructure.Repositories
             _beezyCinemaContext = beezyCinemaContext;
         }
 
-
         public async Task<IEnumerable<GenreData>> GetGenres()
         {
             return await _beezyCinemaContext.Genre.Select(g => new GenreData(g.Id, g.Name)).ToListAsync();

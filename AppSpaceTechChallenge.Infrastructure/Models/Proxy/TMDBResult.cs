@@ -20,6 +20,5 @@ namespace AppspaceTechChallenge.Infrastructure.Models.Proxy
         public string OriginalLanguage { get; set; }
         [JsonProperty("release_date")]
         public DateTime ReleaseDate { get; set; }
-
     }
 }

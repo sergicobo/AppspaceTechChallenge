@@ -1,6 +1,7 @@
 ﻿namespace AppspaceTechChallenge.API.Models
 {
-    public class MovieDTO : RecommendationDTO
-    {
-    }
+    /// <summary>
+    /// Fields for a movie.
+    /// </summary>
+    public class MovieDTO : RecommendationDTO { }
 }

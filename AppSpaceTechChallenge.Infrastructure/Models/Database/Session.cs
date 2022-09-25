@@ -10,7 +10,6 @@ namespace AppspaceTechChallenge.Infrastructure.Models.Database
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public int? SeatsSold { get; set; }
-
         public virtual Movie Movie { get; set; }
         public virtual Room Room { get; set; }
     }

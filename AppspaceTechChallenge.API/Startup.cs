@@ -11,6 +11,9 @@ using AppspaceTechChallenge.Domain.Proxies;
 using AppspaceTechChallenge.Domain.Repositories;
 using AppspaceTechChallenge.Infrastructure.Proxies;
 using AppspaceTechChallenge.Infrastructure.Repositories;
+using System.IO;
+using System.Reflection;
+using System;
 
 namespace AppspaceTechChallenge
 {
@@ -39,6 +42,7 @@ namespace AppspaceTechChallenge
                 {
                     options.DocInclusionPredicate((_, api) => !string.IsNullOrWhiteSpace(api.GroupName));
                     options.TagActionsBy(api => new[] { api.GroupName });
+                    options.IncludeXmlComments(XmlCommentsFilePath);
                 }
             );
 
@@ -71,6 +75,16 @@ namespace AppspaceTechChallenge
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "Appspace Tech Challenge v1");
                 options.RoutePrefix = string.Empty;
             });
+        }
+
+        static string XmlCommentsFilePath
+        {
+            get
+            {
+                var basePath = AppContext.BaseDirectory;
+                var fileName = typeof(Startup).GetTypeInfo().Assembly.GetName().Name + ".xml";
+                return Path.Combine(basePath, fileName);
+            }
         }
     }
 }

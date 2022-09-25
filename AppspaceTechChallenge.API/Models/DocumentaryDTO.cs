@@ -1,6 +1,7 @@
 ﻿namespace AppspaceTechChallenge.API.Models
 {
-    public class DocumentaryDTO : RecommendationDTO
-    {
-    }
+    /// <summary>
+    /// Fields for a documentary.
+    /// </summary>
+    public class DocumentaryDTO : RecommendationDTO { }
 }

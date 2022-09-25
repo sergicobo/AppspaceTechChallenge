@@ -14,7 +14,6 @@ namespace AppspaceTechChallenge.Infrastructure.Models.Database
         public string Name { get; set; }
         public DateTime OpenSince { get; set; }
         public int CityId { get; set; }
-
         public virtual City City { get; set; }
         public virtual ICollection<Room> Room { get; set; }
     }

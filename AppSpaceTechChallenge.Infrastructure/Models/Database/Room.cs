@@ -14,7 +14,6 @@ namespace AppspaceTechChallenge.Infrastructure.Models.Database
         public string Size { get; set; }
         public int Seats { get; set; }
         public int CinemaId { get; set; }
-
         public virtual Cinema Cinema { get; set; }
         public virtual ICollection<Session> Session { get; set; }
     }

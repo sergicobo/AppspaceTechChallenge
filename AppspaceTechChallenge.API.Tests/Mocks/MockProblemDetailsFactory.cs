@@ -8,9 +8,7 @@ namespace AppspaceTechChallenge.API.Tests.Mocks
 {
     public class MockProblemDetailsFactory : ProblemDetailsFactory
     {
-        public MockProblemDetailsFactory()
-        {
-        }
+        public MockProblemDetailsFactory() { }
 
         public override ProblemDetails CreateProblemDetails(HttpContext httpContext,
             int? statusCode = default, string title = default,

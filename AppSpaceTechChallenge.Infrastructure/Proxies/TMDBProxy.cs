@@ -13,7 +13,6 @@ namespace AppspaceTechChallenge.Infrastructure.Proxies
     public class TMDBProxy : ITMDBProxy
     {
         private readonly TinyRestClient _client;
-
         public TMDBProxy()
         {
             _client = new TinyRestClient(new HttpClient(), "https://api.themoviedb.org/3");

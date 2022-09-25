@@ -9,14 +9,10 @@ namespace AppspaceTechChallenge.Infrastructure.Context
 {
     public class BeezyCinemaContext : DbContext
     {
-        public BeezyCinemaContext()
-        {
-        }
+        public BeezyCinemaContext() { }
 
         public BeezyCinemaContext(DbContextOptions<BeezyCinemaContext> options)
-            : base(options)
-        {
-        }
+            : base(options) { }
 
         public virtual DbSet<Cinema> Cinema { get; set; }
         public virtual DbSet<City> City { get; set; }

@@ -15,7 +15,6 @@ namespace AppspaceTechChallenge.Infrastructure.Models.Database
         public DateTime ReleaseDate { get; set; }
         public string OriginalLanguage { get; set; }
         public bool Adult { get; set; }
-
         public virtual ICollection<Session> Session { get; set; }
     }
 }
